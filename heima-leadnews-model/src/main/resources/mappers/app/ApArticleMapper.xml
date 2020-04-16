@@ -118,7 +118,7 @@
         select * from ap_article where id in(
         <trim prefix="" suffixOverrides=",">
             <foreach item="item" collection="list" separator=",">
-                #{item.articleId},
+                #{item.articleId}
             </foreach>
         </trim>
         )
@@ -129,7 +129,7 @@
         select * from ap_article where id in(
         <trim prefix="" suffixOverrides=",">
             <foreach item="item" collection="list" separator=",">
-                #{item},
+                #{item}
             </foreach>
         </trim>
         )

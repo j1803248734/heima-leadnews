@@ -1,3 +1,6 @@
+/**
+ * @author jiangjiang
+ */
 package com.heima.model.behavior.dtos;
 
 
@@ -7,10 +10,13 @@ import lombok.Data;
 
 import java.util.List;
 
+
 @Data
 public class ShowBehaviorDto {
 
-    // 设备ID
+    /**
+     * 记载了行为实体和行为编号
+     */
     @IdEncrypt
     Integer equipmentId;
     List<ApArticle> articleIds;
